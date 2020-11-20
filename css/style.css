@@ -1,1 +1,244 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* libre-franklin-300 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/fonts/libre-franklin-v6-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/fonts/libre-franklin-v6-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/libre-franklin-v6-latin-300.woff2") format("woff2"), url("../fonts/fonts/libre-franklin-v6-latin-300.woff") format("woff"), url("../fonts/fonts/libre-franklin-v6-latin-300.ttf") format("truetype"), url("../fonts/fonts/libre-franklin-v6-latin-300.svg#LibreFranklin") format("svg");
+  /* Legacy iOS */
+}
+
+/* libre-franklin-600 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/fonts/libre-franklin-v6-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/fonts/libre-franklin-v6-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/libre-franklin-v6-latin-600.woff2") format("woff2"), url("../fonts/fonts/libre-franklin-v6-latin-600.woff") format("woff"), url("../fonts/fonts/libre-franklin-v6-latin-600.ttf") format("truetype"), url("../fonts/fonts/libre-franklin-v6-latin-600.svg#LibreFranklin") format("svg");
+  /* Legacy iOS */
+}
+
+/* libre-franklin-700 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/fonts/libre-franklin-v6-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/fonts/libre-franklin-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/libre-franklin-v6-latin-700.woff2") format("woff2"), url("../fonts/fonts/libre-franklin-v6-latin-700.woff") format("woff"), url("../fonts/fonts/libre-franklin-v6-latin-700.ttf") format("truetype"), url("../fonts/fonts/libre-franklin-v6-latin-700.svg#LibreFranklin") format("svg");
+  /* Legacy iOS */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: calc(16px + (20 - 16) * ((100vw - 375px) / (1440 - 375)));
+  text-align: center;
+  color: #151F29;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 2rem auto 1.5rem;
+}
+
+.logo img {
+  width: 3rem;
+}
+
+.subscribe h1 {
+  color: #969696;
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.subscribe h1 span {
+  color: #151F29;
+  font-weight: 700;
+}
+
+.subscribe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  margin: 1.75rem auto;
+}
+
+.subscribe form input {
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+}
+
+.subscribe form input:focus {
+  outline: none;
+}
+
+.subscribe form .email-container {
+  position: relative;
+  width: 68%;
+}
+
+.subscribe form #email {
+  border: 1px solid rgba(194, 211, 255, 0.7);
+  width: 100%;
+}
+
+.subscribe form #email::-webkit-input-placeholder {
+  color: #C2D3FF;
+  opacity: 0.7;
+}
+
+.subscribe form #email:-ms-input-placeholder {
+  color: #C2D3FF;
+  opacity: 0.7;
+}
+
+.subscribe form #email::-ms-input-placeholder {
+  color: #C2D3FF;
+  opacity: 0.7;
+}
+
+.subscribe form #email::placeholder {
+  color: #C2D3FF;
+  opacity: 0.7;
+}
+
+.subscribe form #email + p {
+  position: absolute;
+  bottom: -1rem;
+  left: 1rem;
+  color: #FF5263;
+  font-style: italic;
+  font-size: 0.5rem;
+  height: 0;
+  opacity: 0;
+}
+
+.subscribe form #email.error {
+  border: 1px solid #FF5263;
+}
+
+.subscribe form #email.error + p {
+  height: auto;
+  opacity: 1;
+}
+
+.subscribe form .btn {
+  width: 28%;
+  background-color: #4F7DF3;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
+.subscribe form .btn:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 0 5px 5px -3px #C2D3FF;
+          box-shadow: 0 5px 5px -3px #C2D3FF;
+}
+
+.image {
+  width: 100%;
+  margin: 3rem auto;
+}
+
+.image img {
+  width: 40%;
+}
+
+.social-links {
+  margin: 0.5rem auto;
+  color: #4F7DF3;
+}
+
+.social-links a {
+  border: 1px solid rgba(150, 150, 150, 0.25);
+  border-radius: 50%;
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0 0.25rem 1rem;
+  line-height: 1.75rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  background-color: #4F7DF3;
+  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: #969696;
+  margin: 0 auto 2rem;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 4rem;
+  }
+  .subscribe h1 {
+    font-size: 1.75rem;
+  }
+  .subscribe form {
+    width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscribe form input {
+    margin: 0.5rem auto;
+  }
+  .subscribe form .email-container {
+    width: 100%;
+  }
+  .subscribe form #email.error {
+    margin-bottom: 1rem;
+  }
+  .subscribe form #email.error + p {
+    bottom: 0rem;
+  }
+  .subscribe form .btn {
+    width: 100%;
+  }
+  .image img {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
